@@ -87,6 +87,11 @@
   color: #2F80ED;
 }
 
+.header__link:hover {
+  transition: opacity .3s linear;
+  opacity: .5;
+}
+
 .header__main-illustration {
   background-image: url(../images/header-image.png);
   background-position: center;
@@ -125,6 +130,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #2F80ED;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -244,6 +250,10 @@
   position: absolute;
 }
 
+.feinman__link:hover {
+  transition: opacity .3s linear;
+  opacity: .5
+}
 /*kaufman section starts here*/
 
 .kaufman {
@@ -361,6 +371,10 @@
   color: white;
 }
 
+.footer__column-link:hover {
+  transition: opacity .3s linear;
+  opacity: .5
+}
 /*social network block starts here*/
 
 .footer__social-icon {
