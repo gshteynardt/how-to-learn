@@ -121,11 +121,14 @@
 
 .two-columns {
   display: flex;
+  justify-content: space-between;
+  /* подобрано значение  justify-content*/
   width: 80%;
 }
 
 .two-columns__brief {
-  min-width: 175px;
+  max-width: 175px;
+  /* исправлено значение min-width*/
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -170,6 +173,7 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
+  margin: auto;
 }
 
 .section-subtitle {
@@ -178,6 +182,7 @@
   font-size: 24px;
   font-weight: normal;
   text-align: center;
+  margin: auto;
 }
 
 .table {
@@ -186,6 +191,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .table__cell {
@@ -216,7 +222,8 @@
   background-size: 867px 637px;
   background-repeat: no-repeat;
   position: relative;
-  height: 890px;
+  height: 790px;
+  /* исправлено значение height*/
 }
 
 .feinman__title {
@@ -254,6 +261,7 @@
   transition: opacity .3s linear;
   opacity: .5
 }
+
 /*kaufman section starts here*/
 
 .kaufman {
@@ -261,7 +269,7 @@
   background-color: #1F1F1F;
   position: relative;
   overflow: hidden;
-  z-index: -1;
+  /* удален z-index */
 }
 
 .section-title_theme_dark {
@@ -284,11 +292,13 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
 }
 
 .table__cell_theme_dark::before {
   counter-increment: list;
-  content: counter(list)'.';
+  content: counter(list)'';
+  /* удалены точки */
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -296,11 +306,12 @@
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  /* задан background-size: contain; */
   position: absolute;
   right: -210px;
   width: 877px;
   height: 877px;
-  z-index: -1;
   top: 0;
 }
 
@@ -316,8 +327,8 @@
   position: relative;
   width: 90%;
   min-height: 250px;
-  flex-basis: 711px;
   justify-content: space-between;
+  margin: auto;
 }
 
 /*copyright blok in the footer starts here*/
@@ -326,7 +337,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  flex-basis: 711px;
+  /* добавил flex-basis */
 }
 
 .logo_place_footer {
@@ -375,6 +387,7 @@
   transition: opacity .3s linear;
   opacity: .5
 }
+
 /*social network block starts here*/
 
 .footer__social-icon {
