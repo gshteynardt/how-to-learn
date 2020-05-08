@@ -1,7 +1,4 @@
 .header__main-illustration {
-  background-image: url(../../../../images/header-image.png);
-  background-position: center;
-  background-size: cover;
   width: 756px;
   height: 608px;
   align-self: flex-end;
