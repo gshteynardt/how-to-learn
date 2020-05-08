@@ -1,0 +1,20 @@
+
+@import url(./__description/page__description.css);
+@import url(./__digits/page__digits.css);
+@import url(./__footer/page__footer.css);
+@import url(./__technics/page__technics.css);
+@import url(./__feinman/page__fienman.css);
+@import url(./__resources/page__resources.css);
+
+
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
